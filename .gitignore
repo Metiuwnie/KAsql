@@ -1,0 +1,95 @@
+# ==========================================
+# Environment & Secret Credentials
+# ==========================================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+
+# Firebase Client Credentials
+kasql_flutter/lib/firebase_options.dart
+!kasql_flutter/lib/firebase_options.dart.example
+kasql_flutter/android/app/google-services.json
+!kasql_flutter/android/app/google-services.json.example
+
+# ==========================================
+# Database Dumps & Data Backups
+# ==========================================
+*.sql
+!database_clean.sql
+!migrations/*.sql
+*.sqlite
+*.sqlite3
+*.db
+new_database/
+backup/
+backups/
+
+# ==========================================
+# Logs & Temporary Files
+# ==========================================
+*.log
+scratch/
+tmp/
+temp/
+
+# ==========================================
+# Editor & IDE Configurations
+# ==========================================
+.idea/
+.vscode/
+.agents/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Flutter / Dart / Android / iOS Artifacts
+# ==========================================
+**/android/.gradle/
+**/android/.kotlin/
+**/android/local.properties
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/*.keystore
+**/*.jks
+**/key.properties
+
+**/ios/.generated/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.framework
+**/ios/Flutter/flutter_assets/
+**/ios/ServiceDefinitions.json
+
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/build/
+**/coverage/
+
+# ==========================================
+# Firebase Private Keys
+# ==========================================
+**/serviceAccountKey.json
